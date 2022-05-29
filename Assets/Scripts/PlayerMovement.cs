@@ -21,4 +21,8 @@ public class PlayerMovement : MonoBehaviour
 
         rigid.velocity = vec;
     }
+    public void Die()
+    {
+
+    }
 }
