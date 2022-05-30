@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 21420296}
   - component: {fileID: 21420300}
   - component: {fileID: 21420301}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -253,6 +253,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rigid: {fileID: 21420300}
   speed: 10
+  mask:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!1001 &163772907
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -319,6 +322,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BulletSpawner (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5839948578816776547, guid: cf3949e70f3a69d4e89f75a9aa88353b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf3949e70f3a69d4e89f75a9aa88353b, type: 3}
@@ -418,8 +426,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 440287496}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 10, y: 0, z: 0}
-  m_LocalScale: {x: 20, y: 1, z: 1}
+  m_LocalPosition: {x: 10, y: 1, z: 0}
+  m_LocalScale: {x: 20, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1064595534}
@@ -515,8 +523,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 474426721}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
-  m_LocalScale: {x: 20, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalScale: {x: 20, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1064595534}
@@ -612,8 +620,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 578084654}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 10}
-  m_LocalScale: {x: 20, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 10}
+  m_LocalScale: {x: 20, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1064595534}
@@ -685,6 +693,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BulletSpawner (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5839948578816776547, guid: cf3949e70f3a69d4e89f75a9aa88353b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf3949e70f3a69d4e89f75a9aa88353b, type: 3}
@@ -938,8 +951,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1228479547}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -10, y: 0, z: 0}
-  m_LocalScale: {x: 20, y: 1, z: 1}
+  m_LocalPosition: {x: -10, y: 1, z: 0}
+  m_LocalScale: {x: 20, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1064595534}
@@ -1011,6 +1024,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BulletSpawner (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5839948578816776547, guid: cf3949e70f3a69d4e89f75a9aa88353b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf3949e70f3a69d4e89f75a9aa88353b, type: 3}
@@ -1110,7 +1128,7 @@ GameObject:
   - component: {fileID: 1687535766}
   - component: {fileID: 1687535765}
   - component: {fileID: 1687535764}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}

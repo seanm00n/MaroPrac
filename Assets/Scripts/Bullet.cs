@@ -6,6 +6,9 @@ public class Bullet : MonoBehaviour
 {
     public float speed = 8f;
     private Rigidbody bulletRigid;
+    RaycastHit hit;
+    public LayerMask mask;
+    float distance = 1f;
 
     void Start()
     {
@@ -17,7 +20,10 @@ public class Bullet : MonoBehaviour
 
     void Update()
     {
-        
+        Debug.DrawRay(transform.position,transform.forward*distance, Color.green);
+        if (Physics.Raycast(transform.position, transform.forward,out hit, distance,mask)) {
+            Debug.Log("player hit");
+        }
     }
     private void OnTriggerEnter(Collider other)
     {
