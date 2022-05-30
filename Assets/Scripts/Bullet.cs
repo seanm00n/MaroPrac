@@ -17,12 +17,10 @@ public class Bullet : MonoBehaviour
         Destroy(gameObject,3f);
     }
 
-
     void Update()
     {
         Debug.DrawRay(transform.position,transform.forward*distance, Color.green);
         if (Physics.Raycast(transform.position, transform.forward,out hit, distance,mask)) {
-            Debug.Log("player hit");
         }
     }
     private void OnTriggerEnter(Collider other)

@@ -10,10 +10,7 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask mask;
     float y;
     float x;
-    void Start()
-    {
 
-    }
     void Update()
     {
         Move();
@@ -38,6 +35,8 @@ public class PlayerMovement : MonoBehaviour
     }
     public void Die()
     {
+        GameManager gameManager = FindObjectOfType<GameManager>();
+        gameManager.GameOver();
         gameObject.SetActive(false);
     }
 }
